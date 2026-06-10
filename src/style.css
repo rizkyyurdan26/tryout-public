@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/montserrat.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+
+  --bg-dark: #2d2a7d;
+  --bg-main: #4f46e5;
+  --bg-light: #6366f1;
+  --bg-hover: #4338ca;
+  --bg-heading: #fbbf24;
+  --text-white: #ffffff;
+  --text-black: #111827;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --border-section: #f9fafb;
+
+  /* Statis */
+  --status-success: #22c55e;
+  --status-warning: #f59e0b;
+  --status-danger: #ef4444;
+  --link: #4d85fd;
+}
+
+@theme {
+  --color-dark: var(--bg-dark);
+  --color-main: var(--bg-main);
+  --color-light: var(--bg-light);
+  --color-hover: var(--bg-hover);
+  --color-heading: var(--bg-heading);
+  --color-primary1: var(--text-black);
+  --color-primary2: var(--text-white);
+  --color-secondary: var(--text-secondary);
+  --color-border: var(--border);
+  --color-section: var(--border-section);
+  --color-success: var(--status-success);
+  --color-warning: var(--status-warning);
+  --color-danger: var(--status-danger);
+  --color-link: var(--link);
+}

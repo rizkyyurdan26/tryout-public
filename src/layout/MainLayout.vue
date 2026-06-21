@@ -1,13 +1,14 @@
-<script setup lang="ts">
-import Navbar from "../components/layout/Navbar.vue";
+<script setup>
+import Navbar from '@/components/layout/Navbar.vue';
+import Footer from '@/components/layout/Footer.vue';
 </script>
 
 <template>
-  <div class="flex flex-col flex-1 w-full">
-    <navbar />
-    <main class="relative flex-1 overflow-y-auto">
-      <router-view></router-view>
+  <div class="min-h-screen flex flex-col">
+    <Navbar />
+    <main class="flex-1">
+      <router-view />
     </main>
+    <Footer />
   </div>
-  <footer></footer>
 </template>
